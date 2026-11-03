@@ -9,24 +9,54 @@
 <body class="bg-slate-900 text-slate-100 font-sans">
  
     <!-- Navbar -->
-    <nav class="bg-slate-950 border-b border-slate-800 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <img src="Logo.jpg" alt="Logo AK Hobbies" class="h-9 w-auto object-contain">
-                <span class="text-xl font-bold text-white tracking-wide">AK Hobbies</span>
-            </div>
-            <div class="hidden md:flex space-x-6 font-medium text-slate-300">
-                <a href="index.html" class="hover:text-red-500 transition">Beranda</a>
-                <a href="katalog.html" class="text-red-500 font-semibold transition">Katalog Ayam</a>
-                <a href="galeri.html" class="hover:text-red-500 transition">Galeri Indukkan</a>
-                <a href="tentang.html" class="hover:text-red-500 transition">Tentang Kami</a>
-                <a href="kontak.html" class="hover:text-red-500 transition">Kontak</a>
-            </div>
-            <div>
-                <a href="https://wa.me/6283870211141?text=Halo%20AK%20Hobbies,%20saya%20ingin%20konsultasi%20mengenai%20jenis%20ayam%20aduan" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">WhatsApp</a>
-            </div>
+<!-- Navbar -->
+<nav class="bg-slate-950 border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="Logo.jpg" alt="Logo AK Hobbies" class="h-9 w-auto object-contain">
+            <span class="text-xl font-bold text-white tracking-wide">AK Hobbies</span>
         </div>
-    </nav>
+ 
+        <!-- Menu Desktop (Sembunyikan di HP) -->
+        <div class="hidden md:flex space-x-6 font-medium text-slate-300">
+            <a href="index.html" class="hover:text-red-500 transition">Beranda</a>
+            <a href="katalog.html" class="hover:text-red-500 transition">Katalog Ayam</a>
+            <a href="galeri.html" class="hover:text-red-500 transition">Galeri Indukkan</a>
+            <a href="tentang.html" class="text-red-500 font-semibold transition">Tentang Kami</a>
+            <a href="kontak.html" class="hover:text-red-500 transition">Kontak</a>
+        </div>
+ 
+        <!-- Tombol WhatsApp & Tombol Hamburger HP -->
+        <div class="flex items-center space-x-3">
+            <a href="https://wa.me/6283870211141?text=Halo%20AK%20Hobbies,%20saya%20ingin%20konsultasi%20mengenai..." class="bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded-lg text-sm font-semibold transition">WhatsApp</a>
+            
+            <!-- Tombol Hamburger (Wajib ada agar muncul di HP) -->
+            <button onclick="toggleMenu()" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+ 
+    <!-- Menu Dropdown untuk HP (Tampil saat tombol hamburger diklik) -->
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-4 space-y-2">
+        <a href="index.html" class="block text-slate-300 hover:text-white py-2">Beranda</a>
+        <a href="katalog.html" class="block text-slate-300 hover:text-white py-2">Katalog Ayam</a>
+        <a href="galeri.html" class="block text-slate-300 hover:text-white py-2">Galeri Indukkan</a>
+        <a href="tentang.html" class="block text-red-500 font-semibold py-2">Tentang Kami</a>
+        <a href="kontak.html" class="block text-slate-300 hover:text-white py-2">Kontak</a>
+    </div>
+</nav>
+ 
+<!-- Script JavaScript untuk Toggle Menu HP (Pastikan script ini ada di bawah sebelum </html>) -->
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    }
+</script>
+ 
  
     <!-- Header Katalog -->
     <header class="bg-gradient-to-r from-slate-950 via-slate-900 to-red-950 py-12 text-center">
