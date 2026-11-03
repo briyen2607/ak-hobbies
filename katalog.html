@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Laga - AK Hobbies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+ 
+    <!-- Navbar -->
+    <nav class="bg-slate-950 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="logo.jpg" alt="Logo AK Hobbies" class="h-9 w-auto object-contain">
+                <span class="text-xl font-bold text-white tracking-wide">AK Hobbies</span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium text-slate-300">
+                <a href="index.html" class="hover:text-red-500 transition">Beranda</a>
+                <a href="katalog.html" class="text-red-500 font-semibold transition">Katalog Ayam</a>
+                <a href="galeri.html" class="hover:text-red-500 transition">Galeri Indukkan</a>
+                <a href="tentang.html" class="hover:text-red-500 transition">Tentang Kami</a>
+                <a href="kontak.html" class="hover:text-red-500 transition">Kontak</a>
+            </div>
+            <div>
+                <a href="https://wa.me/6283870211141?text=Halo%20AK%20Hobbies,%20saya%20ingin%20konsultasi%20mengenai%20jenis%20ayam%20aduan" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- Header Katalog -->
+    <header class="bg-gradient-to-r from-slate-950 via-slate-900 to-red-950 py-12 text-center">
+        <h1 class="text-3xl font-bold text-white">Katalog Ayam Laga Pilihan</h1>
+        <p class="text-slate-400 mt-2">Pilih indukan atau jagoan siap turun dengan silsilah dan performa teruji.</p>
+    </header>
+ 
+      <section id="catalog" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white">Katalog Ayam Laga</h2>
+            <p class="text-slate-400 mt-2">Jenis/Trah ayam yang ada di AK Hobbies. </p>
+        </div>
+ 
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- Foto ke 1 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+ 
+ 
+ <!-- Foto ke 2 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+ 
+<!-- Foto ke 3 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+
+<!-- Foto ke 4 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+
+<!-- Foto ke 5 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+
+<!-- Foto ke 6 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+
+<!-- Foto ke 7 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+
+<!-- Foto ke 8 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+
+<!-- Foto ke 9 -->
+<div class="bg-slate-800 rounded-xl shadow-md overflow-hidden border border-slate-700 hover:border-red-500 transition card-galeri">
+    
+    <!-- Area Foto Sampul -->
+    <div class="cursor-pointer overflow-hidden bg-slate-950">
+        <!-- Cukup berikan onclick="openModal(this)" langsung di gambar sampulnya -->
+        <img src="ss.jpg" alt="Sampul Bangkok" class="w-full h-52 object-cover hover:scale-105 transition duration-300" onclick="openModal(this)">
+        
+        <!-- 3 Foto Lainnya Disembunyikan (Akan ikut terbaca saat lightbox dibuka) -->
+        <div class="hidden">
+            <img src="Snow.jpg" alt="Foto 2">
+            <img src="Saigon.jpg" alt="Foto 3">
+            <img src="Logo.jpg" alt="Foto 4">
+        </div>
+    </div>
+ 
+    <!-- Bagian Teks Keterangan di Bawahnya -->
+    <div class="p-5 space-y-3">
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 font-semibold px-2.5 py-0.5 rounded">Bangkok</span>
+        <h3 class="text-xl font-bold text-white">Bangkok</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">Ayam jenis bangkok yang tersedia yaitu : sisik satria sineki dan sisik beras tumpah.</p>
+        <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-bold text-white">Rp -</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20AK%20Hobbies,%20saya%20ingin%20pesan%20Bangkok" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">Pesan</a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </section>>
+ 
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-xs">
+            &copy; 2026 AK Hobbies. Hak Cipta Dilindungi.
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox (Letakkan di bagian bawah sebelum </html>) -->
+<div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-4" onclick="closeModal()">
+    <div class="relative max-w-4xl w-full flex items-center justify-center" onclick="event.stopPropagation()">
+        <!-- Tombol Close -->
+        <button onclick="closeModal()" class="absolute -top-10 right-0 text-white text-3xl font-bold hover:text-red-500">&times;</button>
+        
+        <!-- Tombol Prev (Sebelumnya) -->
+        <button onclick="prevImage()" class="absolute left-2 md:-left-12 bg-slate-800/80 hover:bg-red-600 text-white p-3 rounded-full text-xl font-bold transition">&#10094;</button>
+        
+        <!-- Gambar Aktif di Modal -->
+        <img id="lightboxImg" src="" alt="Lightbox Image" class="max-h-[80vh] max-w-full rounded-lg shadow-2xl object-contain">
+        
+        <!-- Tombol Next (Berikutnya) -->
+        <button onclick="nextImage()" class="absolute right-2 md:-right-12 bg-slate-800/80 hover:bg-red-600 text-white p-3 rounded-full text-xl font-bold transition">&#10095;</button>
+    </div>
+</div>
+ 
+<!-- Script JavaScript Lightbox -->
+<script>
+    let currentImages = [];
+    let currentIndex = 0;
+ 
+    function openModal(imgElement) {
+        const card = imgElement.closest('.card-galeri');
+        if (!card) return;
+ 
+        // Ambil semua gambar di dalam kartu tersebut (termasuk yang di dalam div hidden)
+        currentImages = Array.from(card.querySelectorAll('img')).map(img => img.src);
+        currentIndex = currentImages.indexOf(imgElement.src);
+        if (currentIndex === -1) currentIndex = 0;
+ 
+        updateLightboxImage();
+        document.getElementById('lightboxModal').classList.remove('hidden');
+    }
+ 
+    function closeModal() {
+        document.getElementById('lightboxModal').classList.add('hidden');
+    }
+ 
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        updateLightboxImage();
+    }
+ 
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        updateLightboxImage();
+    }
+ 
+    function updateLightboxImage() {
+        const modalImg = document.getElementById('lightboxImg');
+        modalImg.src = currentImages[currentIndex];
+    }
+</script>
+ 
+</body>
+</html>
+ 
